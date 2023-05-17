@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>Гра хрестики нолики</title>
+</head>
+<body>
+    <div class="content">
+
+        <div class="currentPlayer">
+            <span>Зараз ходить: <span id="curPlyr">X</span></span>
+        </div>
+        
+        <div id="area"></div>
+        <div class="stat">
+            <audio src="Linkin Park.mp3.mp3" controls></audio>
+            <table>
+                <th colspan="2">Статистика</th>
+                <tr>
+                    <td>X</td>
+                    <td><span id="sX">0</span></td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td><span id="sO">0</span></td>
+                </tr>
+                <tr>
+                    <td>Нічія</td>
+                    <td><span id="sD">0</span></td>
+                </tr>
+            </table>
+        </div>
+        
+    <script src="./main.js"></script>
+</body>
+</html>

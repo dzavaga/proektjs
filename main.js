@@ -1,3 +1,11 @@
+
+  let age = prompt("Будь ласка, введіть свій вік:");
+if (age < 18) {
+    alert("Вибачте Ви не досягли повноліття:перегляньте мультфільм");
+    window.location.href = "https://youtu.be/-aP9-UQPMyI";
+}
+
+
 let area = document.getElementById('area');
 let cell = document.getElementsByClassName('cell');
 let currentPlayer = document.getElementById('curPlyr');
@@ -93,3 +101,30 @@ function updateStat() {
     document.getElementById('sO').innerHTML = stat.o;
     document.getElementById('sD').innerHTML = stat.d;
 }
+(() => {
+      function updateClock() {
+      const clockContainer = document.querySelector(".contact-clock");
+      const options = {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      };
+      clockContainer.innerText = new Date().toLocaleTimeString("en-GB", options);
+    }
+    setInterval(updateClock, 1000);
+
+})();
+let slavaText = document.querySelector("h1");
+let originalText = slavaText.textContent;
+
+slavaText.addEventListener("click", function() {
+  if (slavaText.textContent === originalText) {
+    slavaText.textContent = "ГЕРОЯМ СЛАВА !!!!!!";
+    slavaText.style.color = "red";
+  } else {
+    slavaText.textContent = originalText;
+    slavaText.style.color = ""; 
+  }
+});
+
+

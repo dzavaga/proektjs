@@ -57,3 +57,27 @@ style.css * {
     padding: 5px;
     text-align: center;
 }
+
+body {
+    background-image: url(./img/ukraine1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+        .contact-clock {
+            font-size: 30px;
+        
+        }
+        .currentPlayer {
+            font-size: 30px;
+        }
+  .stat {
+    font-size: 20px;
+  }
+ h1 {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1vh;
+        text-align: center;
+ }
